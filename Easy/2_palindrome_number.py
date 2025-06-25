@@ -1,18 +1,26 @@
-def encuentra_palindromo(num):
+def encuentra_palindromo(numbers):
     
-    num = str(num)
+    numbers = str(numbers)
+    contador = len(numbers)-1
+    validador = False
     
-    count = len(num)-1
     
-    for i in range(len(num)):
+    for num in numbers:
         
-        if num[i] != num[count]:
-            return False
-                
-        count = count -1
+        if num == numbers[contador]:
+            validador = True
+        else:
+            validador = False
+            break    
+            
+        contador -= 1
         
-    return True    
         
+    if validador:
+        return True
+    else:
+        return False
         
+    
         
-print(encuentra_palindromo(124421))    
+encuentra_palindromo(124421)    
