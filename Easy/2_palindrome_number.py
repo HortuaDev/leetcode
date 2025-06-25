@@ -21,6 +21,5 @@ def encuentra_palindromo(numbers):
     else:
         return False
         
-    
         
 encuentra_palindromo(124421)    
