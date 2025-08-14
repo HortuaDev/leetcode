@@ -29,14 +29,11 @@ def evaluador(numero):
         
         maximo = opciones[0]
             
-        for i in range(len(opciones[1:])):
+        for i in opciones:
             
-            
-            if opciones[i+1] > opciones[i]:
-                maximo = opciones[i+1]    
+            if i > maximo:
+                maximo = i    
             
     return maximo    
     
-print("Resultado: ",evaluador("6777133339"))
-print("Resultado: ",evaluador("2300019"))
-print("Resultado: ",evaluador("42352338"))
+print("Resultado: ",evaluador("4818042931906802860005960222213336669500011846936171709111"))
